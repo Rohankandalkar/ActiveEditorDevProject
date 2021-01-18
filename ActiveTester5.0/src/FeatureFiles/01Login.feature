@@ -32,8 +32,4 @@ Scenario: Failed Login with User name & wrong password
 Scenario: Failed Login with User name (but there is no entry of this user in configuration file)
 	Given	"STEP:LOGIN-05-01"	Login as "test1111"
 	Then	"STEP:LOGIN-05-02"	Verify login error: the user ID or the password is invalid
-	
-@W.01.01.06-Login
-Scenario: test: Failed Login with User name (and wrong password in configuration file)
-	Given	"STEP:LOGIN-06-01"	Login as "test1111"
-	Then	"STEP:LOGIN-06-02"	Verify login error: the user ID or the password is invalid
+
