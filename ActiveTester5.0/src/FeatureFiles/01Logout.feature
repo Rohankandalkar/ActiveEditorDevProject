@@ -33,5 +33,5 @@ Scenario: Failed Login with User name (but there is no entry of this user in con
 	Given	"STEP:LOGIN-05-01"	Login as "test1111"
 	Then	"STEP:LOGIN-05-02"	Verify login error: the user ID or the password is invalid remote changes demo local change
 	Given	"STEP:LOGIN-05-03"	Login as "testRoyal"
-	When	"STEP:LOGIN-05-04"	Logout and Testing logout
+	When	"STEP:LOGIN-05-04"	Logout and Testing logout test
 
