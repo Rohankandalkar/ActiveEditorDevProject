@@ -31,4 +31,4 @@ Scenario: Failed Login with User name & wrong password
 @W.01.01.05-Login
 Scenario: Failed Login with User name (but there is no entry of this user in configuration file)
 	Given	"STEP:LOGIN-05-01"	Login as "test1111"
-	Then	"STEP:LOGIN-05-02"	Verify login error: the user ID or the password is invalid remote changes 
+	Then	"STEP:LOGIN-05-02"	Verify login error: the user ID or the password is invalid remote changes KK121212
