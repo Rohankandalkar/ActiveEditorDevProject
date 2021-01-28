@@ -3,14 +3,14 @@
 #
 # Copyright 2019 HCL Technologies Limited. All Rights Reserved.
 @W.01.01-Login @Module-01.Core @Owner-PrathmeshD
-Feature: demo: 01.01.Core - Login and Logout
+Feature: 01.01.Core - Login
 
 #Positive and negative scenarios for Login
 #Covering Login with just user name specified and it will take the password from configuration file
-#Covering Login with user name and password
+#Covering Login with user name and password both specified
 @W.01.01.01-Login
-Scenario: test: Failed Login with User name (and wrong password in configuration file)
-	Given	"STEP:LOGIN-01-01"	Login as "test1111"
+Scenario: Failed Login with User name (and wrong password in configuration file)
+	Given	"STEP:LOGIN-01-01"	Login as "test9"
 	Then	"STEP:LOGIN-01-02"	Verify login error: the user ID or the password is invalid
 
 @W.01.01.02-Login
@@ -25,10 +25,11 @@ Scenario: Failed Login with User name (but there is no entry of this user in con
 
 @W.01.01.04-Login
 Scenario: Failed Login with User name & wrong password
-	Given	"STEP:LOGIN-04-01"	demo conflict step test
+	Given	"STEP:LOGIN-04-01"	demo conflict step
 	Then	"STEP:LOGIN-04-02"	demo conflict step
 
-@W.01.01.05-Login
+@W.01.01.03-Login
 Scenario: Failed Login with User name (but there is no entry of this user in configuration file)
-	Given	"STEP:LOGIN-05-01"	Login as "test1111"
-	Then	"STEP:LOGIN-05-02"	Verify login error: the user ID or the password is invalid remote changes RRRRRRKKKKK 5001 and demo conflict step
+	Given	"STEP:LOGIN-03-01"	Login as "test 11"
+	Then	"STEP:LOGIN-03-02"	Verify login error: the user ID or the password is invalid 5001
+
