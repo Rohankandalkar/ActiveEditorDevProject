@@ -27,8 +27,11 @@ Scenario: Failed Login with User name (but there is no entry of this user in con
 Scenario: Failed Login with User name & wrong password
 	Given	"STEP:LOGIN-04-01"	demo conflict step test
 	Then	"STEP:LOGIN-04-02"	demo conflict step
+	Given	"STEP:LOGIN-04-03"	demo conflict step test
 
 @W.01.01.05-Login
 Scenario: Failed Login with User name (but there is no entry of this user in configuration file)
 	Given	"STEP:LOGIN-05-01"	Login as "test1111"
 	Then	"STEP:LOGIN-05-02"	Verify login error: the user ID or the password is invalid remote changes RRRRRRKKKKK 5001 and demo conflict step
+	Given	"STEP:LOGIN-05-03"	demo conflict step test
+	
